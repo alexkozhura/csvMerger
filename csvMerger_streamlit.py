@@ -91,8 +91,8 @@ def main():
 
     mode = st.radio("Choose mode:", ('Test', 'Ongoing'))
 
-    file1 = st.file_uploader("Upload CSV File 1", type="csv")
-    file2 = st.file_uploader("Upload CSV File 2", type="csv")
+    file1 = st.file_uploader("Upload CSV File 1 (список креативов, колонка может называться Creative)", type="csv")
+    file2 = st.file_uploader("Upload CSV File 2 (выгрузка из Appodeal BI или Appgrowth BI)", type="csv")
 
     if file1 and file2:
         if mode == "Test":
